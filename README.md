@@ -20,11 +20,13 @@ The purpose of this analysis is to design a model that will help predict whether
     ![ask_amt_binning](https://user-images.githubusercontent.com/99051640/184456709-c203a9e7-37d6-468d-9804-41e583ec4fe4.png)
     
     - **Adding a third hidden layer:** The number of neurons was aslo changed to be 75 for the first, 38 for the second, and 19 for the third layer.This model still outperformed the original at 72.69% accuracy but dropped below the previous attempt with only 2 hidden layers.
+    
     ![third_hidden_layer](https://user-images.githubusercontent.com/99051640/184456796-e5f758d2-89f4-4124-8aef-f88a5cf19681.png)
 
     - **Reducing the number of neurons significantly and using different activation functions:** The two original hidden layers were changed to contain 8 neurons in the first layer, and 5 in the second. Also, the activation functions in the hidden layers were both changed to 'tanh'. These changes combined with the first step of binning the ASK_AMT variable resulted in the highest model accuracy achieved, 72.9%.
         - When the changes were made separately, no increase was seen. 
         - When changing the hidden layer neurons to 15 and 8, the model's accuracy dropped.
+        
     ![tanh_functions](https://user-images.githubusercontent.com/99051640/184456863-aec15f1a-1ebd-4310-be4f-616755bce67e.png)
 
 ## Summary
