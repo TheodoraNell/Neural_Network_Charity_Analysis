@@ -16,6 +16,7 @@ The purpose of this analysis is to design a model that will help predict whether
 - Unfortunately the model was not able to achieve the target performance of 75% accuracy. The original model's accuracy was 72.49%  and the maximum acheieved even after several optimization attempts was 72.9%
 - The following steps were taken to try to increase model performance:
     - **Binning the ASK_AMT column:** the vast majority of the values in this column were exactly $5000, so binning was used to create separate columns for ASK_AMT_5000 and ASK_AMT_OVER_5000. This resulted in the accuracy increasing marginally to 72.75% 
+
     ![ask_amt_binning](https://user-images.githubusercontent.com/99051640/184456709-c203a9e7-37d6-468d-9804-41e583ec4fe4.png)
     
     - **Adding a third hidden layer:** The number of neurons was aslo changed to be 75 for the first, 38 for the second, and 19 for the third layer.This model still outperformed the original at 72.69% accuracy but dropped below the previous attempt with only 2 hidden layers.
